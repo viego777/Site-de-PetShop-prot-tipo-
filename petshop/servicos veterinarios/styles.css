@@ -1,0 +1,208 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+background-image:  linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('../img/backgound.jpg'); /* Caminho da imagem */
+background-size: cover; /* Faz a imagem cobrir toda a área */
+background-position: center; /* Centraliza a imagem */
+background-repeat: no-repeat; /* Evita que a imagem se repita */
+background-attachment: fixed; /* Fixa a imagem ao fundo */
+}
+
+/* Navbar Principal */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ad90e7;
+    padding: 15px 20px; /* Espaçamento interno */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    z-index: 10;
+}
+
+/* Logo */
+.logo a {
+    text-decoration: none; /* Remove sublinhado */
+    color: #000; /* Cor do texto branca */
+    font-size: 20px; /* Tamanho da fonte */
+    font-weight: bold; /* Texto em negrito */
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaçamento entre imagem e texto */
+}
+
+.logo img {
+    vertical-align: middle;
+}
+
+/* Barra de Pesquisa */
+.search-box {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding:2px 10px;
+    border-radius: 30px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    gap: 10px;
+}
+
+.search-box input[type="search"] {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    flex: 1;
+}
+
+.search-box input::placeholder {
+    color: #aaa;
+}
+    
+.search-box .search-btn img {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+    
+.search-box .search-btn:hover img {
+    transform: scale(1.1);
+}
+    
+  /* Perfil */
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    gap: 5px;
+}
+    
+.profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+    
+.profile a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+    
+/* Navbar Secundária */
+.settings {
+    background-color: #703a79;
+    padding: 10px 0;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+    
+/* Links da Navbar Secundária */
+.settings ul {
+    list-style: none; /*elimina o estilo pré definido da lista*/
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaçamento entre as opções */
+}
+    
+.settings ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+    
+.settings ul li a:hover {
+    color: #8060aa;
+}
+
+h1{
+    color: #000;
+}
+
+header {
+    background-color: transparent;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+}
+
+main {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    top: 30px;
+    left: 10%;
+    transform: translate(-50%);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, select {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #c097b4;
+    color: black;
+    border: none;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #e68900;
+}
+
+footer {
+    background-color: #1b0b6a;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    border-top: 3px solid #ffc107;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+  
+footer a {
+    color: #ffc107;
+    text-decoration: none;
+    font-weight: bold;
+}
+  
+footer a:hover {
+    text-decoration: underline;
+}

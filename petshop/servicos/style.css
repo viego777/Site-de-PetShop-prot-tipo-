@@ -1,0 +1,212 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background-image:  linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('../img/backgound.jpg'); /* Caminho da imagem */
+    background-size: cover; /* Faz a imagem cobrir toda a área */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-attachment: fixed; /* Fixa a imagem ao fundo */
+}
+
+/* Navbar Principal */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ad90e7; /* Cor do fundo */
+    padding: 15px 20px; /* Espaçamento interno */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    z-index: 10;
+}
+    
+/* Logo */
+.logo a {
+    text-decoration: none; /* Remove sublinhado */
+    color: #000;
+    font-size: 20px; /* Tamanho da fonte */
+    font-weight: bold; /* Texto em negrito */
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaçamento entre imagem e texto */
+}
+    
+.logo img {
+    vertical-align: middle;
+}
+    
+/* Barra de Pesquisa */
+.search-box {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 8px 15px;
+    border-radius: 30px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    gap: 10px;
+}
+    
+.search-box input[type="search"] {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    flex: 1;
+}
+    
+.search-box input::placeholder {
+    color: #aaa;
+}
+    
+.search-box .search-btn img {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+    
+.search-box .search-btn:hover img {
+    transform: scale(1.1);
+}
+    
+/* Perfil */
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    gap: 5px;
+}
+    
+.profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+    
+.profile a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+    
+/* Navbar Secundária */
+.settings {
+    background-color: #703a79;
+    padding: 10px 0;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+    
+/* Links da Navbar Secundária */
+.settings ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaçamento entre as opções */
+}
+    
+.settings ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+    
+.settings ul li a:hover {
+    color: #8060aa; 
+}
+
+/* Estilização do container geral */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+  
+/* Estilização de cada card */
+.card {
+    margin-top: 8%;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+  
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+  
+/* Ajuste da imagem */
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+  
+/* Estilização do conteúdo */
+.card-body {
+    padding: 16px;
+    text-align: center;
+}
+  
+.card-title {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+  
+.card-text {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 16px;
+}
+  
+.btn {
+    background-color: #c097b4;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+  
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/*estilização do roda pé*/
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #1b0b6a;
+    color: #ffffff; /* Cor do texto branca */
+    text-align: center; /* Alinha o texto no centro */
+    padding: 20px; /* Espaçamento interno */
+    font-size: 14px; /* Tamanho da fonte */
+    font-family: Arial, sans-serif; /* Fonte limpa e legível */
+    border-top: 3px solid #ffc107; /* Linha decorativa no topo */
+}
+  
+footer a {
+    color: #ffc107; /* Cor de links no rodapé */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-weight: bold; /* Links em negrito */
+}
+  
+footer a:hover {
+    text-decoration: underline; /* Sublinhado ao passar o mouse */
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Serviços Veterinários</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+        <!-- Navbar Principal -->
+        <nav class="navbar">
+            <div class="logo">
+              <a class="navbar-brand" href="../home/index.html">
+                <img src="../img/ImgLogo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                PetShop
+              </a>
+            </div>
+              
+            <div class="search-box">
+              <input type="search" name="search" placeholder="O que seu pet precisa?" id="search-box">
+              <a href="" class="search-btn">
+                <img src="../img/search.png" alt="Lupa" height="40" width="40">
+              </a>
+            </div>
+              
+            <div class="profile">
+                <a href="../login/cadastro.html">
+                  <img src="../img/perfil.svg" alt="Perfil">
+                  Entrar
+                </a>
+            </div>
+            </nav>
+              
+            <!-- Navbar Secundária -->
+            <div class="settings">
+              <ul>
+                  <li><a href="../home/index.html">Início</a></li>
+                  <li><a href="../cagorias/categorias.html">Categorias</a></li>
+                  <li><a href="../servicos/servicos.html">Serviços</a></li>
+                  <li><a href="../carrinho/carrinho.html">Carrinho</a></li>
+              </ul>
+            </div>
+
+    <header>
+        <h1>Cadastro Para Serviços Veterinários</h1>
+    </header>
+    <main>
+        <form>
+            <label for="nome">Nome do Animal:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="tipo">Tipo de Animal:</label>
+            <select id="tipo" name="tipo">
+                <option value="cachorro">Cachorro</option>
+                <option value="gato">Gato</option>
+                <option value="outro">Outro</option>
+            </select>
+
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" required>
+
+            <label for="tamanho">Tamanho:</label>
+            <select id="tamanho" name="tamanho">
+                <option value="pequeno">Pequeno</option>
+                <option value="medio">Médio</option>
+                <option value="grande">Grande</option>
+            </select>
+            
+            <button type="submit">Cadastrar</button>
+        </form>
+    </main>
+
+    <!--rodapé-->
+<footer>
+    ©2025 Projeto PetShop (Grupo 6) <br>
+    Trabalho Acadêmico Para a Matéria de <a href="http://www2.ifam.edu.br/campus/itacoatiara/ensino/coordenacao-geral-de-ensino/informatica">Programação Dinâmica Para Web</a>.
+</footer>
+</body>
+</html>
